@@ -157,6 +157,12 @@ class TrainingData(object):
 
         return sorted(self.intent_examples, key=lambda e: e.get("intent"))
 
+    def sorted_regex_examples(self):
+        # type: () -> List[Message]
+        """Sorts the regex examples by the name of the intent."""
+
+        return sorted(self.regex_features, key=lambda e: e.get("name"))
+
     def validate(self):
         # type: () -> None
         """Ensures that the loaded training data is valid, e.g. has a minimum of certain training examples."""

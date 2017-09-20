@@ -56,3 +56,6 @@
 ## synonym:vegetarian
 - vegg
 - veggie
+
+## regex:zipcode
+- [0-9]{5}
